@@ -1,218 +1,182 @@
 <!DOCTYPE html>
 <html lang="en">
-  <head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    
-    <title>VWeatherMap</title>
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>Privacy Policy - TiMp3Player</title>
 
-    <link rel="icon" type="image/x-icon" href="icons/favicon.ico">
+<style>
+body{
+font-family: Arial, sans-serif;
+margin: 40px;
+background:#f7f7f7;
+color:#333;
+line-height:1.6;
+}
 
-    <link rel="stylesheet" href="styles/style.css">
-    <link rel="prefetch" href="media/day1.jpg">
-    <link rel="prefetch" href="media/day2.jpg">
-    <link rel="prefetch" href="media/day3.jpg">
-    <link rel="prefetch" href="media/day4.jpg">
-    <link rel="prefetch" href="media/day5.jpg">
-    <link rel="prefetch" href="media/night1.jpg">
-    <link rel="prefetch" href="media/night2.jpg">
-    <link rel="prefetch" href="media/night3.jpg">
-    <link rel="prefetch" href="media/night4.jpg">
-    <link rel="prefetch" href="media/night5.jpg">
-    <link rel="prefetch" href="media/rainy1.jpg">
-    <link rel="prefetch" href="media/rainy2.jpg">
-    <link rel="prefetch" href="media/rainy3.jpg">
-    <link rel="prefetch" href="media/rainy4.jpg">
-    <link rel="prefetch" href="media/rainy5.jpg">
-    <link rel="prefetch" href="media/cloudy1.jpg">
-    <link rel="prefetch" href="media/cloudy2.jpg">
-    <link rel="prefetch" href="media/cloudy3.jpg">
-    <link rel="prefetch" href="media/cloudy4.jpg">
-    <link rel="prefetch" href="media/cloudy5.jpg">
-    <link rel="prefetch" href="icons/loader.gif">
+.container{
+background:white;
+padding:40px;
+border-radius:10px;
+box-shadow:0 0 10px rgba(0,0,0,0.1);
+}
 
-    <link rel="preconnect" href="https://fonts.googleapis.com">
-    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-    <link href="https://fonts.googleapis.com/css2?family=Montserrat:wght@500&display=swap" rel="stylesheet">
+h1{
+color:#2c3e50;
+}
 
-    <style>
-      body
-      {
-        /* background-image: linear-gradient(rgba(0, 0, 0, 0.5),rgba(0, 0, 0, 0.5)) , url('media/day1.jpg'); */
-        -webkit-background-size: cover;
-        -moz-background-size: cover;
-        -o-background-size: cover;
-        
-        /* Added background-repeat and set it to no-repeat to help prevent the images from duplicating. I added !important to 
-         * background-repeat and background-size in order to place importance on the background images not repeating and
-         * to cover the entire webpage. Phillip Andrews
-         */
-        background-repeat: no-repeat !important;
-        background-size: cover !important;
-        background-attachment: fixed;
+h2{
+color:#34495e;
+margin-top:25px;
+}
 
-				height: 100vh;
-      }
-			@media (max-width: 600px)
-			{
-				body
-				{
-					height: 100%;
-				}
-			}
-    </style>
-  </head>
-  <body>
-    <ul class="navbar">
-      <li style="float: left; margin-left: -10px;" class="forecast"><a class="repo-link" href="https://github.com/kshitizrohilla/weather-app-using-openweathermap-api/">⛄ VIGNESH WEATHER FORCAST</a></li>
-      <li><a href="#">⟳</a></li>
-      <li><a href="#">☆<!--★--></a></li>
-      <li><a href="#">···</a></li>
-      <li><input spellcheck="false" class="search-city" id="searchCity" type="text" autocomplete="off" placeholder="🔍︎ Search City"></li>
-    </ul>
+p{
+margin:10px 0;
+}
 
-		<ul class="mobile-navbar">
-      <li><input spellcheck="false" class="mobile-search-city" id="mobileSearchCity" type="text" autocomplete="off" placeholder="Search City..."></li>
-    </ul>
+ul{
+margin-left:20px;
+}
 
-    <h1 class="location-name" id="locationName">Search City...</h1>
+footer{
+margin-top:40px;
+font-size:14px;
+color:gray;
+}
+</style>
 
-    <div class="temperature-container">
-      <div class="temperature-icon"><img class="imgs-as-icons" src="icons/sunny.png"></div>
-      <div class="temperature-value" id="temperatureValue"></div>
-    </div>
+</head>
 
-    <h2 class="weather-type" id="weatherType"></h2>
+<body>
 
-    <div class="additionals-first-row">
-      <span class="air-quality-additional">
-        <span class="air-quality-additional-label">Air Quality Index </span>
-        <span class="air-quality-index-additional-value">Moderate</span>
-      </span>
+<div class="container">
 
-      <span class="real-feel-additional">
-        <span class="real-feel-additional-label">Real Feel </span>
-        <span class="real-feel-additional-value" id="realFeelAdditionalValue">-</span>
-      </span>
+<h1>Privacy Policy for TiMp3Player</h1>
 
-      <span class="humidity-additional">
-        <span class="humidity-additional-label">Humidity </span>
-        <span class="humidity-additional-value" id="humidityAdditionalValue">-</span>     
-      </span>
+<p>Last Updated: March 2026</p>
 
-      <span class="max-temperature-additional">
-        <span class="max-temperature-additional-label">Highest Temperature </span>
-        <span class="max-temperature-additional-value" id="maxTemperatureAdditionalValue">-</span>
-      </span>
+<p>
+TiMp3Player respects your privacy and is committed to protecting your personal information.
+This Privacy Policy explains how our application collects, uses, and protects information when you use the app.
+</p>
 
-      <span class="min-temperature-additional">
-        <span class="min-temperature-additional-label">Lowest Temperature </span>
-        <span class="min-temperature-additional-value" id="minTemperatureAdditionalValue">-</span>          
-      </span>
-    </div>
+<h2>1. Introduction</h2>
 
-    <div class="additionals-second-row">
-      <span class="wind-speed-additional">
-        <span class="wind-speed-additional-label">Wind Speed </span>       
-        <span class="wind-speed-additional-value" id="windSpeedAdditionalValue">-</span>
-      </span>
+<p>
+TiMp3Player is a music player application that allows users to play music from their device storage
+and stream music from cloud storage. We aim to provide a secure and private music listening experience.
+</p>
 
-      <span class="wind-direction-additional">
-        <span class="wind-direction-additional-label">Wind Direction </span>
-        <span class="wind-direction-additional-value" id="windDirectionAdditionalValue">-</span>
-      </span>
+<h2>2. Information We Collect</h2>
 
-      <span class="visibility-additional">
-        <span class="visibility-additional-label">Visibility </span>
-        <span class="visibility-additional-value" id="visibilityAdditionalValue">-</span>
-      </span>
+<h3>2.1 Personal Information</h3>
+<p>
+TiMp3Player does not collect personally identifiable information such as name, address, or phone number.
+</p>
 
-      <span class="pressure-additional">
-        <span class="pressure-additional-label">Pressure </span>       
-        <span class="pressure-additional-value" id="pressureAdditionalValue">-</span>
-      </span>
+<h3>2.2 Non-Personal Information</h3>
+<p>
+The app may collect non-personal information such as device type, operating system version,
+and app performance analytics to improve the application.
+</p>
 
-      <span class="sunrise-additional">
-        <span class="sunrise-additional-label">Sunrise </span>
-        <span class="sunrise-additional-value" id="sunriseAdditionalValue">-</span>  
-      </span>
+<h3>2.3 Device Information</h3>
+<p>
+The application may access certain device information required for app functionality.
+</p>
 
-      <span class="sunset-additional">
-        <span class="sunset-additional-label">Sunset </span>
-        <span class="sunset-additional-value" id="sunsetAdditionalValue">-</span>
-      </span>
-    </div>
+<h2>3. Permissions Used by the App</h2>
 
-    <br>
-    <!-- <div class="separator"></div> -->
+<h3>3.1 Storage Permission</h3>
+<p>
+TiMp3Player requires access to device storage to detect and play music files stored locally on your device.
+No files are uploaded or shared without user action.
+</p>
 
-    <div class="daily-forecast">
+<h3>3.2 Internet Access</h3>
+<p>
+Internet permission is required to stream music from cloud storage and retrieve music metadata.
+</p>
 
-      <h2 class="daily-forecast-label">Daily</h2>
+<h2>4. How We Use Your Information</h2>
 
-      <div class="daily-forecast-card">
-        <p class="daily-forecast-date">Fri 27</p>
-        <div class="daily-forecast-logo"><img class="imgs-as-icons" src="icons/sunny.png"></div>
-        <div class="max-min-temperature-daily-forecast">
-          <span class="max-daily-forecast">37<sup>o</sup>C</span>
-          <span class="min-daily-forecast">25<sup>o</sup>C</span>
-        </div>
-        <p class="weather-type-daily-forecast">Sunny</p>
-      </div>
+<p>The information collected is used to:</p>
 
-      <div class="daily-forecast-card">
-        <p class="daily-forecast-date">Fri 27</p>
-        <div class="daily-forecast-logo"><img class="imgs-as-icons" src="icons/sunny.png"></div>
-        <div class="max-min-temperature-daily-forecast">
-          <span class="max-daily-forecast">37<sup>o</sup>C</span>
-          <span class="min-daily-forecast">25<sup>o</sup>C</span>
-        </div>
-        <p class="weather-type-daily-forecast">Sunny</p>
-      </div>
+<ul>
+<li>Provide music playback services</li>
+<li>Improve app performance</li>
+<li>Enable cloud streaming features</li>
+<li>Maintain application security</li>
+</ul>
 
-      <div class="daily-forecast-card">
-        <p class="daily-forecast-date">Fri 27</p>
-        <div class="daily-forecast-logo"><img class="imgs-as-icons" src="icons/sunny.png"></div>
-        <div class="max-min-temperature-daily-forecast">
-          <span class="max-daily-forecast">37<sup>o</sup>C</span>
-          <span class="min-daily-forecast">25<sup>o</sup>C</span>
-        </div>
-        <p class="weather-type-daily-forecast">Sunny</p>
-      </div>
+<h2>5. Cloud Music Streaming</h2>
 
-      <div class="daily-forecast-card">
-        <p class="daily-forecast-date">Fri 27</p>
-        <div class="daily-forecast-logo"><img class="imgs-as-icons" src="icons/sunny.png"></div>
-        <div class="max-min-temperature-daily-forecast">
-          <span class="max-daily-forecast">37<sup>o</sup>C</span>
-          <span class="min-daily-forecast">25<sup>o</sup>C</span>
-        </div>
-        <p class="weather-type-daily-forecast">Sunny</p>
-      </div>
+<p>
+TiMp3Player allows users to stream music from cloud storage services. 
+These services may store music files and provide streaming access.
+The app itself does not store personal user data on external servers.
+</p>
 
-      <div class="daily-forecast-card">
-        <p class="daily-forecast-date">Fri 27</p>
-        <div class="daily-forecast-logo"><img class="imgs-as-icons" src="icons/sunny.png"></div>
-        <div class="max-min-temperature-daily-forecast">
-            <span class="max-daily-forecast">37<sup>o</sup>C</span>
-            <span class="min-daily-forecast">25<sup>o</sup>C</span>
-        </div>
-        <p class="weather-type-daily-forecast">Sunny</p>
-      </div>
+<h2>6. Third-Party Services</h2>
 
-      <div class="daily-forecast-card">
-        <p class="daily-forecast-date">Fri 27</p>
-        <div class="daily-forecast-logo"><img class="imgs-as-icons" src="icons/sunny.png"></div>
-        <div class="max-min-temperature-daily-forecast">
-          <span class="max-daily-forecast">37<sup>o</sup>C</span>
-          <span class="min-daily-forecast">25<sup>o</sup>C</span>
-        </div>
-        <p class="weather-type-daily-forecast">Sunny</p>
-      </div>
-    </div>
-    
-    <script src="scripts/script.js"></script>
-		<script src="scripts/mobile.js"></script>
-		<br><br><br><br><br>
-  </body>
+<p>
+TiMp3Player may use third-party services to support functionality such as cloud storage and backend services.
+These third-party services may collect limited information as governed by their own privacy policies.
+</p>
+
+<h2>7. Data Storage and Security</h2>
+
+<p>
+We prioritize protecting your data. The app does not store sensitive personal information.
+All local music files remain on your device unless you choose to upload them to cloud services.
+</p>
+
+<h2>8. User Data Protection</h2>
+
+<p>
+We implement appropriate security measures to prevent unauthorized access,
+alteration, or disclosure of information handled by the application.
+</p>
+
+<h2>9. Children’s Privacy</h2>
+
+<p>
+TiMp3Player does not knowingly collect personal information from children under the age of 13.
+If a parent or guardian believes their child has provided personal information,
+they should contact us so we can remove such information.
+</p>
+
+<h2>10. Changes to This Privacy Policy</h2>
+
+<p>
+We may update this Privacy Policy from time to time.
+Users are encouraged to review this page periodically for any updates.
+Changes become effective immediately after they are posted on this page.
+</p>
+
+<h2>11. Your Privacy Rights</h2>
+
+<p>
+Users have the right to understand how their data is used.
+If you have questions or concerns regarding privacy,
+you may contact us using the information below.
+</p>
+
+<h2>12. Contact Information</h2>
+
+<p>
+If you have any questions about this Privacy Policy, please contact us:
+</p>
+
+<p>
+Email: your-email@example.com
+</p>
+
+<footer>
+© 2026 TiMp3Player. All rights reserved.
+</footer>
+
+</div>
+
+</body>
 </html>
